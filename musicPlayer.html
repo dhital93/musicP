@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="musicPlayer.js"></script>
+    <link rel="stylesheet" href="musicPlayer.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/4d4ac95ad4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>musicPlayer</title>
+  </head>
+  <body>
+    <header>
+      <div id="mainContainer">
+        <div id="ImageCover">
+          <img src="" alt="" id="cover" width="100%" height="100%" />
+          <div id="songdiv"><span id="songName"></span></div>
+        </div>
+        <div id="menuContainer">
+          <div id="scrollBar">
+            <div id="scroll">
+              <div id="scrollDisplay"></div>
+            </div>
+          </div>
+          <div id="buttons">
+            <div id="back" onclick="back()">
+              <img src="bBack.png" alt="" height="40px" width="40px" />
+            </div>
+            <div id="play" onclick="palyOrPouse()">
+              <img
+                src="play.png"
+                alt=""
+                height="40px"
+                width="40px"
+                id="playImg"
+              />
+            </div>
+
+            <div id="forward" onclick="next()">
+              <img src="forward.png" alt="" height="40px" width="40px" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
