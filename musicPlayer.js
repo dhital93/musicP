@@ -1,8 +1,8 @@
 var playButton = document.getElementById("play");
 var playImg = document.getElementById("playImg");
-var musicList = ["two.mp3", "one.mp3", "four.m4a", "three.mp3"];
-var picture = ["one.jpg", "two.jpg", "three.jpg", "five.jpeg"];
-var songName = ["One.mp3", "Two.mp3", "Three.mp3", "four.mp3"];
+var musicList = ["two.mp3", "one.mp3", "four.m4a", "three.mp3", "prabin.mp3"];
+var picture = ["one.jpg", "two.jpg", "three.jpg", "five.jpeg", "prabin.jpg"];
+var songName = ["One.mp3", "Two.mp3", "Three.mp3", "four.mp3", "Prabin.mp3"];
 var list = 0;
 var audio = new Audio();
 var i = 0;
@@ -29,7 +29,7 @@ audio.addEventListener("timeupdate", function() {
 //next song button
 function next() {
   list++;
-  if (list > 3) {
+  if (list > 4) {
     list = 0;
   }
   //i call the function from the top
@@ -39,7 +39,7 @@ function next() {
 function back() {
   list--;
   if (list < 0) {
-    list = 3;
+    list = 4;
   }
   palyOrPouse();
 }
