@@ -1,7 +1,7 @@
 var playButton = document.getElementById("play");
 var playImg = document.getElementById("playImg");
 var musicList = ["two.mp3", "one.mp3", "four.m4a", "three.mp3", "prabin.mp3"];
-var picture = ["one.jpg", "two.jpg", "three.jpg", "five.jpeg", "prabin.jpg"];
+var picture = ["one.jpg", "two.jpg", "three.jpg", "five.jpeg", "prabin1.jpg"];
 var songName = ["One.mp3", "Two.mp3", "Three.mp3", "four.mp3", "Prabin.mp3"];
 var list = 0;
 var audio = new Audio();
