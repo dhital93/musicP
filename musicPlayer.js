@@ -1,7 +1,7 @@
 var playButton = document.getElementById("play");
 var playImg = document.getElementById("playImg");
 var musicList = ["two.mp3", "one.mp3", "four.m4a", "three.mp3", "prabin.mp3"];
-var picture = ["one.jpg", "two.jpg", "three.jpg", "five.jpeg", "prabin1.jpg"];
+var picture = ["one.jpg", "two.jpg", "three.jpg", "four.jpg", "prabin1.jpg"];
 var songName = ["One.mp3", "Two.mp3", "Three.mp3", "four.mp3", "Prabin.mp3"];
 var list = 0;
 var audio = new Audio();
@@ -20,6 +20,15 @@ function palyOrPouse() {
   }
   i++;
 }
+//playfunction
+function play() {
+  audio.src = musicList[list];
+  document.getElementById("cover").src = picture[list];
+  document.getElementById("songName").innerHTML = songName[list];
+  document.getElementById("playImg").src = "pause.png";
+
+  audio.play();
+}
 //for to make time line
 audio.addEventListener("timeupdate", function() {
   var position = audio.currentTime / audio.duration;
@@ -33,7 +42,7 @@ function next() {
     list = 0;
   }
   //i call the function from the top
-  palyOrPouse();
+  play();
 }
 //function to make the backward
 function back() {
@@ -41,5 +50,5 @@ function back() {
   if (list < 0) {
     list = 4;
   }
-  palyOrPouse();
+  play();
 }
