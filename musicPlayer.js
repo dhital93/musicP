@@ -31,8 +31,13 @@ function play() {
 }
 //for to make time line
 audio.addEventListener("timeupdate", function() {
+  var currentTime = audio.currentTime;
+  var endTime = audio.duration;
   var position = audio.currentTime / audio.duration;
   document.getElementById("scrollDisplay").style.width = position * 100 + "%";
+  if (currentTime == endTime) {
+    next();
+  }
 });
 
 //next song button
